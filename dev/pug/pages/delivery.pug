@@ -1,0 +1,10 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'Доставка и оплата'
+    - var pageClass = 'index-page'
+
+block content
+    include delivery/breadcrumbs
+    include ../modules/go-back-mobile
+    include delivery/section-1

@@ -1,0 +1,101 @@
+section.basket-product
+    .container
+        .basket-product-wrap
+            h3.section-title Оформление заказа
+            form#checkout-form.basket-products-wrapper
+                .basket-products.col-xl-8.col-lg-12
+                    .checkout-title-wrap
+                        .checkout-number-title 1
+                        .tab-title Ваши данные
+                    .basket-checkout-form
+                        .basket-checkout-row.row
+                            .basket-checkout-input-wrap.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required(type="text" placeholder="Ваше имя" name="name")
+                            .basket-checkout-input-wrap.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required.phone-mask(type="phone" placeholder="Номер телефона" name="tel")
+                            .basket-checkout-input-wrap.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required.error-email-input(type="email" placeholder="E-mail" name="email")
+                            .basket-checkout-input-wrap.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required(type="text" placeholder="Населенный пункт" name="punkt")
+                            .basket-checkout-input-wrap.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required(type="text" placeholder="Улица и дом" name="address")
+                            .basket-checkout-input-wrap.label-off.col-lg-4
+                                .basket-input
+                                    input.teamlight-inputs.input-required(type="text" placeholder="Квартира или офис")
+                            .basket-checkout-input-wrap.col-lg-12
+                                textarea.teamlight-textarea(placeholder="Комментарий к заказу" cols="7")
+                    .checkout-info-delivery
+                        .checkout-title-wrap
+                            .checkout-number-title 2
+                            .tab-title Информация о доставке
+                        .checkout-info-deli
+                            p Доставим на следующий день после оформления заказа
+                            .checkout-for-moskov
+                                span До 3 000 ₽ – 
+                                span стоимость доставки 500 ₽ От 3 000 ₽ – доставка бесплатно
+                            .checkout-for-moskov
+                                span От 3 000 ₽ – 
+                                span доставка #[span.deli-free бесплатно]
+                            p В случае отказа от товара в момент доставки или возврат товара надлежащего качества – доставка будет стоить 500 ₽.
+                            span.annotation После оформления заказа с вами свяжется наш менеджер для подтверждения.
+                    .checkout-info-delivery.mt-4
+                        .checkout-title-wrap
+                            .checkout-number-title 3
+                            .tab-title Оплата
+                        .checkout-info-deli
+                            .checkout-choise-pay
+                                .checkout-choise-platform
+                                    label
+                                        .checkout-choise-platform-input
+                                        input(type="radio")
+                                        p Наличными или картой при получении
+                                .checkout-choise-platform
+                                    label
+                                        .checkout-choise-platform-input
+                                        input(type="radio")
+                                        p Картой онлайн
+                                .checkout-choise-platform
+                                    label
+                                        .checkout-choise-platform-input
+                                        input(type="radio")
+                                        p Яндекс.Деньги
+                                .checkout-choise-platform
+                                    label
+                                        .checkout-choise-platform-input
+                                        input(type="radio")
+                                        p Банковский перевод
+
+                            p После того как вы нажмете «Оплатить» и оформить заказ вы попадете на защищенную страницу для ввода данных и оплаты.
+
+                .basket-products-info.col-xl-4.col-lg-6
+                    .your-basket
+                        .tab-title Ваша корзина
+                        .you-basket-summ-and-stock
+                            .your-product-summ
+                                span 4 товара на сумму
+                                span 143 500 ₽
+                            .your-product-summ
+                                span Общая скидка
+                                span.you-basket-stock -8 145 ₽
+                            .your-product-summ
+                                span Доставка
+                                span Бесплатно
+                        .you-basket-summ-over
+                            span Итоговая стоимость
+                            span 138 355 ₽
+                        button#submit-checkout.you-basket-over-buy.teamlight-buttons-buy.checkout-order(type="submit" disabled="disabled") Оформить заказ
+                        .checked-checkout-order
+                            input#checked-checkout.checkout-checkbox(type="checkbox" onchange="document.getElementById('submit-checkout').disabled = !this.checked;")
+                            label(for="checked-checkout")
+                            span Я согласен с условиями #[a.teamlight-link(href="/") пользовательского соглашения]
+                    .your-basket-call
+                        .tab-title Не хотите ничего заполнять?
+                        p Тогда позвоните нам по номеру и менеджер примет заказ по телефону
+                        .you-call-me
+                            +icon('call-me')
+                            a.teamlight-link(href="tel:+74957616160") +7 (495) 761-61-60

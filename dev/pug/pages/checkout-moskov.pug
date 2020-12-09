@@ -1,0 +1,10 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'Оформление заказа для Москвы'
+    - var pageClass = 'basket-page'
+
+block content
+    include checkout/breadcrumbs
+    include ../modules/go-back-mobile
+    include checkout/checkout-for-moskov

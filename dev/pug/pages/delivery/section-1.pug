@@ -1,0 +1,93 @@
+section.delivery
+    .container
+        .all-partner-wrap
+            .partner-wrap.delivery-wrap
+                .partner-content.delivery-content
+                    .partner-content-text.col-lg-5.col-md-6.col-sm-12
+                        h3.section-title Быстро доставим в любую точку нашей страны!
+            .delivery-tabs-swiper.swiper-container
+                .delivery-tabs.swiper-wrapper
+                    .delivery-tab.swiper-slide.col-lg-3
+                        +icon('clock')
+                        .delivery-tab-item
+                            span.delivery-tab-items1 Время доставки и работы магазина
+                            span.delivery-tab-items ежедневно с #[span 10.00] до #[span 22.00]
+                    .delivery-tab.swiper-slide.col-lg-3
+                        +icon('delivery')
+                        .delivery-tab-item
+                            span.delivery-tab-items1 Курьер предупреждает о доставке
+                            span.delivery-tab-items за 30-60 минут до приезда
+                    .delivery-tab.swiper-slide.col-lg-3
+                        +icon('lamp')
+                        .delivery-tab-item
+                            span.delivery-tab-items1 Проверка внешнего вида и комплектации
+                            span.delivery-tab-items осуществляется при доставке
+                    .delivery-tab.swiper-slide.col-lg-3
+                        +icon('mail')
+                        .delivery-tab-item
+                            span.delivery-tab-items1 Прием и обработка заявок на почту
+                            span.delivery-tab-items в субботу и воскресенье
+            .delivery-region-swiper.swiper-container
+                .delivery-region.swiper-wrapper
+                    .delivery-region-wrap.swiper-slide.col-lg-4
+                        .delivery-region-item
+                            h3.deliver-tit По Москве и области
+                            p В пределах 5 км от МКАД
+                            P.deliveri-rule Осуществляется на следующий день после оформления и зависит от суммы заказа
+                        .delivery-region-price
+                            +icon('delivery')
+                            span.delivery-region-price-text При заказе на сумму от #[span 3 000 ₽] доставка - бесплатно
+                        ul.setup-stock-list.delivery-setup
+                            li.setup-stock-item до 3000 ₽ стоимость доставки – #[span 500 ₽]
+                            li.setup-stock-item в случае отказа от товара в момент доставки или возврат товара надлежащего качества, стоимость доставки – #[span 500 ₽]
+                    .delivery-region-wrap.swiper-slide.col-lg-4
+                        .delivery-region-item
+                            h3.deliver-tit В Подмосковье
+                            p Далее 5 км от МКАД
+                            P.deliveri-rule Осуществляется в течение 2-х дней после поступления заявки
+                        .delivery-region-price
+                            +icon('delivery')
+                            span.delivery-region-price-text При заказе на сумму #[span от 6 000 ₽] доставка - бесплатно
+                        ul.setup-stock-list.delivery-setup
+                            li.setup-stock-item оплачивается дополнительно #[span 25 руб за километр] пути, начиная с 6-ого километра, от МКАД
+                    .delivery-region-wrap.swiper-slide.col-lg-4
+                        .delivery-region-item
+                            h3.deliver-tit По России
+                            p Все города страны
+                            P.deliveri-rule Осуществляется транспортными компаниями, без предоплаты
+                        .delivery-region-price
+                            +icon('delivery')
+                            span.delivery-region-price-text При заказе на сумму #[span от 6 000 ₽] доставка - бесплатно
+                        ul.setup-stock-list.delivery-setup
+                            li.setup-stock-item Срок доставки зависит от расстояния до заказчика, а стоимость доставки - от веса, объема заказа  и выбранной транспортной компании
+
+
+
+
+            h3.section-title Способы заказа и оплаты
+            .partner-my-partner.delivery-my
+                .partner-block-list.row
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('basket')
+                        span Электронный заказ
+                        p Воспользуйтесь корзиной и добавьте все товары, которые вам нужны
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('call-me')
+                        span По телефону
+                        p Вы можете позвонить нам +7 (495) 761-61-60 или заказать обратный звонок
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('mail')
+                        span По e-mail
+                        p Вы можете прислать свой телефон и информацию о товаре на почту info@teamlight.ru и мы вам перезвоним
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('nal2')
+                        span Онлайн оплата на сайте
+                        p Картой любого банка или сервисом Яндекс.Деньги
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('box')
+                        span Оплата при получении
+                        p Наличный или безналичный расчет
+                    .partner-block-item.col-lg-4.col-md-6.col-sm-6
+                        +icon('check')
+                        span Банковский перевод
+                        p После оформления заказы мы вышлем реквизиты вам на почту

@@ -1,0 +1,100 @@
+footer
+    .container
+        .footer-blocks
+            .footer-first.col-lg-6.col-md-3.col-sm-3
+                .footer-logo-social
+                    +icon('logo')
+                    .footer-social
+                        a(href="/")
+                            .footer-links-social.footer-vk
+                                +icon('vk')
+                        a(href="/")
+                            .footer-links-social.footer-fb
+                                +icon('fb')
+                        a(href="/")
+                            .footer-links-social.footer-tw
+                                +icon('tw')
+                ul.footer-pages.desktop-footer-pages
+                    li.footer-pages-item
+                        a(href="/") Каталог
+                    li.footer-pages-item
+                        a(href="/") О нас
+                    li.footer-pages-item
+                        a(href="/") Новости
+                    li.footer-pages-item
+                        a(href="/") Дизайнерам
+                ul.footer-pages.desktop-footer-pages.mr-0
+                    li.footer-pages-item
+                        a(href="/") Доставка и оплата
+                    li.footer-pages-item
+                        a(href="/") Установка и сборка
+                    li.footer-pages-item
+                        a(href="/") Контакты
+
+                ul.footer-pages.mobile-footer-pages
+                    li.footer-pages-item
+                        a(href="/") Каталог
+                    li.footer-pages-item
+                        a(href="/") О нас
+                    li.footer-pages-item
+                        a(href="/") Новости
+                    li.footer-pages-item
+                        a(href="/") Дизайнерам
+                    li.footer-pages-item
+                        a(href="/") Доставка и оплата
+                    li.footer-pages-item
+                        a(href="/") Установка и сборка
+                    li.footer-pages-item
+                        a(href="/") Контакты
+
+            .footer-second.col-lg-6.col-md-9.col-sm-9
+                .footer-popular-tag
+                    h3.popular-tag-title Популярные теги
+                    .popular-tag-wrap.row
+                        a.popular-tag-item(href="/") Для кухни
+                        a.popular-tag-item(href="/") Для спальни
+                        a.popular-tag-item(href="/") Люстры
+                        a.popular-tag-item(href="/") Для сада
+                        a.popular-tag-item(href="/") Для детской
+                        a.popular-tag-item(href="/") Торшеры
+                        a.popular-tag-item(href="/") Бра
+                        a.popular-tag-item(href="/") Для ванной
+                .footer-info
+                    h3.popular-tag-title Информация о нас
+                    .footer-info-about-us
+                        .footer-info-item
+                            .footer-info-wrap
+                                +icon('map')
+                                .footer-info-item--name Мы находимся
+                            p.footer-info-text Москва, 1-й Вешняковский проезд, 1с7
+                        .footer-info-item
+                            .footer-info-wrap
+                                +icon('phone')
+                                .footer-info-item--name Наши телефоны
+                            .footer-phones-and-callback
+                                .footer-phones
+                                    a.footer-info-text(href="tel:88005513135") 8 (800) 551 31 35
+                                    a.footer-info-text(href="tel:84957616160") 8 (495) 761 61 60
+                                .footer-callback.teamlight-383838(data-toggle="modal" data-target="#popop-question") Заказать звонок
+                        .footer-info-item
+                            .footer-info-wrap
+                                +icon('email')
+                                .footer-info-item--name Пишите нам
+                            a.footer-info-text(href="mailto:info@teamlight.ru") info@teamlight.ru
+
+                        .footer-social.footer-social2
+                            a(href="/")
+                                .footer-links-social.footer-vk
+                                    +icon('vk')
+                            a(href="/")
+                                .footer-links-social.footer-fb
+                                    +icon('fb')
+                            a(href="/")
+                                .footer-links-social.footer-tw
+                                    +icon('tw')
+    .popup-blocks
+        include popup/popup-product
+        include popup/popup-1-click
+        include popup/popup-question
+        include popup/popup-notific
+        include popup/popup-choise-city

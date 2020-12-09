@@ -1,0 +1,143 @@
+header
+    .header-top-bg
+        .container
+            .header-main--wrap
+                .header-main-top
+                    .header-logo-and-city.col-lg-6
+                        +icon('logo')
+                        .header-city-choise
+                            span.my-city Ваш город
+                            .header-you-city(data-toggle="modal" data-target="#popop-city-choise")
+                                span.city-choise Санкт-Петербург
+                                +icon('arrow-city')
+                    .header-info-basket-items.col-lg-6
+                        .header-info-cols
+                            .header-info-calls
+                                .header-calls-text Принимаем звонки
+                                .header-calls-time с 10.00 до 22.00
+                            .header-info-phone
+                                a.header-info-phone-call(href="tel:88005513135") 8 800 551 31 35
+                                .header-calls-callback(data-toggle="modal" data-target="#popop-question") Заказать звонок
+                        .header-info-cols
+                            .header-favourite
+                                a(href="/")
+                                    +icon('heart')
+                            .header-basket
+                                a.header-basket-link(href="")
+                                    .header-basket-added
+                                        +icon('basket')
+                                        span.added-basket-product 10
+                                    //.header-basket-text Корзина пуста
+                                    .header-basket-content
+                                        span 4 #[span шт] 65 769,60 ₽
+                                        a.header-basket-content--link(href="/") Перейти в корзину
+    .header-main-bottom-relative
+        .header-main-bottom
+            .container.header-main-bottom-wrap
+                .col-lg-6
+                    .header-bottom-catalog
+                        .sandwich-menu
+                            .menu-sandwich
+                                span.hamburguer
+                        .header-catalog-text Каталог
+                    .header-bottom-search
+                        form.header-bottom-search-form
+                            .header-search-input-wrap
+                                input#search-popup.input-search(type="text" placeholder="Поиск")
+                                button.header-bottom-seacrh-submit(type="submit")
+                                    +icon('search')
+                                include ../modules/header/search
+
+                .col-lg-6
+                    .header-nav-panel
+                        ul.header-nav-panel-list
+                            li.header-nav-panel-item
+                                a(href="/") О нас
+                                    +icon('arrow-city')
+                                ul.nav-panel-list-lvl-2
+                                    li.nav-panel-item-lvl-2
+                                        a(href="/") Мы тут
+                                    li.nav-panel-item-lvl-2
+                                        a(href="/") Мы тут
+                                    li.nav-panel-item-lvl-2
+                                        a(href="/") Мы тут
+                            li.header-nav-panel-item
+                                a(href="/") Доставка и оплата
+                            li.header-nav-panel-item
+                                a(href="/") Установка и сборка
+                            li.header-nav-panel-item
+                                a(href="/") Контакты
+                form.mini-basket-popup
+                    ul.mini-basket-list
+                        li.mini-basket-item
+                            img.mini-basket__img(src="static/img/general/search/img1.png")
+                            .mini-basket-content-wrap
+                                .mini-basket-name
+                                    a(href="/") Потолочная люстра Lightstar Nubi Ondoso 802031
+                                    span Удалить
+                                .mini-basket-add
+                                    .basket-product-count-add.mini-basket-add-count(onmousedown="return false" onselectstart="return false")
+                                        .mini-basket-product-button-minus.basket-product-buttons -
+                                        input.basket-product-count-products.mini-basket-count(type="number" value="1")
+                                        .mini-basket-product-button-plus.basket-product-buttons +
+                                    .mini-basket-count-price
+                                        .mini-basket-price 1 690 ₽
+                                        .mini-basket-price-stock 9 690 ₽
+                        li.mini-basket-item
+                            img.mini-basket__img(src="static/img/general/search/img1.png")
+                            .mini-basket-content-wrap
+                                .mini-basket-name
+                                    a(href="/") Потолочная люстра Lightstar Nubi Ondoso 802031
+                                    span Удалить
+                                .mini-basket-add
+                                    .basket-product-count-add.mini-basket-add-count(onmousedown="return false" onselectstart="return false")
+                                        .mini-basket-product-button-minus.basket-product-buttons -
+                                        input.basket-product-count-products.mini-basket-count(type="number" value="1")
+                                        .mini-basket-product-button-plus.basket-product-buttons +
+                                    .mini-basket-count-price
+                                        .mini-basket-price 1 690 ₽
+                                        .mini-basket-price-stock 9 690 ₽
+                    .mini-basket-plus
+                        span Доставка
+                        span Бесплатно
+                    .mini-basket-plus
+                        span Общая скидка
+                        span.mini-text-green -9 000 ₽
+                    .mini-basket-plus
+                        span Итоговая стоимость
+                        span 3 690 ₽
+                    a.teamlight-buttons-buy.mini-basket-order(href="/") Перейти к оформлению заказа
+            include  menu
+
+    .mobile-header-992-wrap
+        .mobile-header-992
+            +icon('logo')
+            +icon('logo-mobile')
+            .header-bottom-search.mobile-search-display-none
+                form.header-bottom-search-form
+                    .header-search-input-wrap
+                        input#search-popup2.input-search(type="text" placeholder="Поиск")
+                        button.header-bottom-seacrh-submit(type="submit")
+                            +icon('search')
+                        include ../modules/header/search
+            .mobile-header-attributes
+                .header-favourite
+                    a(href="/")
+                        +icon('heart')
+                a.header-basket-link(href="")
+                    .header-basket-added
+                        +icon('basket')
+                        span.added-basket-product 10
+                .header-bottom-catalog.mobile-header-bottom-catalog
+                    .sandwich-menu
+                        .menu-sandwich
+                            span.hamburguer
+                    .header-catalog-text.header-catalog-text-mobile Меню
+            include mobile-menu
+        .mobile-header-search-576
+            form.header-bottom-search-form
+                .header-search-input-wrap
+                    input#search-popup3.input-search(type="text" placeholder="Поиск")
+                    button.header-bottom-seacrh-submit(type="submit")
+                        +icon('search')
+                    include ../modules/header/search

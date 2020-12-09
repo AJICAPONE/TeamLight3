@@ -1,0 +1,19 @@
+#popop-notific.modal.fade.popup-bg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content.popup2-content
+            button.close.popup-close(type='button' data-dismiss='modal' aria-label='Close')
+                +icon('close')
+            .popup-question-content
+                .popup-1-right-content
+                    h3.popup-title.text-center.fs-22 Данный товар закончился
+                    p.popup-text-question Оставьте свой e-mail и мы с вами свяжемся,  как только товар появится
+                    form
+                        input.teamlight-inputs(type="email" placeholder="E-mail")
+                        button#submit-checkout3.teamlight-buttons-buy.popup-buy.border-0.mb-3.checkout-order(type="submit" disabled="disabled") Уведомить меня
+                        .checked-checkout-order
+                            input#checked-checkout3.checkout-checkbox(type="checkbox" onchange="document.getElementById('submit-checkout3').disabled = !this.checked;")
+                            label(for="checked-checkout3")
+                            span Я согласен с условиями #[a.teamlight-link(href="/") пользовательского соглашения]
+
+
+

@@ -1,0 +1,11 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'О нас'
+    - var pageClass = 'index-page'
+
+block content
+    include about-us/breadcrumbs
+    include ../modules/go-back-mobile
+    include about-us/section-1
+    include about-us/section-2

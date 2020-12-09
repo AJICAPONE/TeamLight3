@@ -1,0 +1,750 @@
+.breadcrumb-list
+  display: flex;
+  align-items center
+  padding 24px 15px
+.catalog-product-item-info
+  position: relative;
+.breadcrumb-item
+  display flex
+  align-items center
+  padding 0 !important
+
+  .icon
+    size(8px)
+    fill color383838
+    margin 0 8px
+  &:last-child
+    .icon
+      display none
+  &:before
+    display none !important
+
+
+.breadcrumb-link
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+.breadcrumb-item
+  &:last-child
+    .breadcrumb-link
+      font-family "Montserrat 600", sans-serif
+
+.catalog-page .content
+  background-color #F6F6F6
+.catalog-page
+  .header-bottom-catalog
+    background-color color383838
+  .header-catalog-text
+    color #fff
+  .hamburguer,.hamburguer:before,.hamburguer:after
+    background-color #fff
+
+
+.catalog-wrapper
+  display flex
+
+
+.filter-title
+  font-family "Montserrat 800", sans-serif
+  font-size 14px
+  margin-bottom 12px
+
+.filter-category-list-name
+  font-family "Montserrat 500", sans-serif
+  font-size 14px
+  width max-content
+  cursor pointer
+
+.filter-category-list
+  margin-bottom 12px
+
+.filter-category-list-lvl2
+  padding-left 25px
+  margin-top 12px
+
+.filter-category-list-name-lvl2
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+.filter-category-item-lvl2
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 6px
+  width max-content
+  cursor pointer
+
+  .icon
+    size(9px)
+    fill color383838
+
+.filter-category-item-lvl2.active
+  padding-left 8px
+  background-color rgba(230, 230, 230, 0.6)
+  border-radius 2px
+  a
+    font-family "Montserrat 600", sans-serif
+    font-size 12px
+  .icon
+    display block
+
+
+.filter-category-item-lvl2
+  .icon
+    display none
+.filter-category-item ul
+  display none
+
+.filter-category-item
+  margin-bottom 12px
+
+  &:last-child
+    margin-bottom 18px
+
+.filter-category-remove
+  display block
+  padding 8px
+
+.filter-category-watch-all
+  font-family "Montserrat 500", sans-serif
+  font-size 14px
+  color #00B2CB
+  cursor pointer
+
+
+
+/* --------------------------------------------
+	jQuery Range
+---------------------------------------------- */
+.filter--price-js
+  background rgba(238, 85, 75, 0.3)
+  height 5px
+  border-radius 0
+  border none
+  margin-bottom 20px
+
+  .ui-slider-range
+    background #EE554B
+
+  .ui-slider-handle
+    background #EE554B
+    size(12px)
+    border none
+    border-radius 0
+    absolute-center()
+    transform: translate(0%, -50%);
+    outline none
+    cursor pointer
+    margin-left 0
+    &:last-child
+      margin-left -.6em
+
+.filter--price--inputs
+  display flex
+  margin-bottom 30px
+
+
+.filter--label-input
+  display flex
+  align-items center
+  margin-right 27px
+
+  &:last-child
+    margin-right 0
+
+  label
+    margin-right 8px
+    margin-bottom 0
+    font-family "Montserrat 500", sans-serif
+    font-size 14px
+
+
+.sliders-filters
+  padding 3px 7px
+
+.filter-price-title-clear-count
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 15px
+
+  h3
+    margin-bottom 0
+
+.filter-price-clear-count
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+  color rgba(56, 56, 56, 0.81)
+  cursor pointer
+
+.filter-block
+  margin-bottom 33px
+
+.filter-price-checkbox-item--input
+  display none
+
+
+.filter-price-checkbox-item
+  size(22px)
+  margin-right 15px
+  cursor pointer
+  position relative
+.filter-price-checkbox-item.checked
+  background-color #00B2CB
+
+.filter-price-checkbox-item.checked:after
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  background: #ffffff;
+  width: 1.5px;
+  height: 1.5px;
+  box-shadow:  2px 0px 0 #ffffff, -2px 0px 0 #ffffff, 4px 0 0 #ffffff, 4px -2px 0 #ffffff, 4px -4px 0 #ffffff, 4px -6px 0 #ffffff, 4px -8px 0 #ffffff, 4px -10px 0 #ffffff;
+  transform: rotate(45deg);
+
+.filter-price-checkbox-wrap
+  display flex
+
+  label
+    display flex
+    align-items center
+    margin-bottom 14px
+
+.filter-price-checkbox-wrap:last-child label
+  margin-bottom 0
+.filter-price-checkbox-item__name
+  font-family "Montserrat 400", sans-serif
+  font-size 14px
+
+
+.filter-submit-text
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+
+  span
+    font-family "Montserrat 800", sans-serif
+.filter-submit
+  margin-bottom 20px
+.filter-reset
+  display flex
+  align-items center
+  justify-content center
+  cursor pointer
+  width max-content
+  margin 0 auto
+  transition all linear .2s
+  margin-bottom 20px
+
+  .icon
+    size(19px)
+    fill rgba(56, 56, 56, 0.61)
+    margin-right 9px
+
+.filter-reset:hover
+    .icon
+      fill color383838
+    .filter-reset-text
+      color color383838
+
+.filter-reset-text
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color rgba(56, 56, 56, 0.61)
+.filter-more-parameters4
+  display flex
+  align-items center
+  width 100%
+  justify-content space-between
+  margin 0 auto
+  cursor pointer
+  margin-bottom 25px
+
+  .icon
+    size(13px)
+
+.filter-more-parameters3
+  display flex
+  align-items center
+  width 100%
+  justify-content space-between
+  margin 0 auto
+  cursor pointer
+  margin-bottom 25px
+
+  .icon
+    size(13px)
+.filter-more-parameters2
+  display flex
+  align-items center
+  width 100%
+  justify-content space-between
+  margin 0 auto
+  cursor pointer
+  margin-bottom 25px
+
+  .icon
+    size(13px)
+
+
+.filter-more-parameters
+  display flex
+  align-items center
+  width 100%
+  justify-content space-between
+  margin 0 auto
+  cursor pointer
+
+  .icon
+    size(13px)
+
+.rotate-filter
+  transform rotate(180deg)
+
+.filter-more-parameters-text,.filter-more-parameters-text2
+  font-family "Montserrat 800", sans-serif
+  font-size 14px
+  margin-right 24px
+
+.filter-attention
+  display flex
+  align-items center
+
+.attention-teamlight
+  display flex
+  align-items center
+  justify-content center
+  margin-left 10px
+  padding 4px
+  border-radius 50%
+  background-color rgba(0, 178, 203, 0.16)
+  cursor pointer
+  position relative
+
+  .icon
+    size(11px)
+    fill #00B2CB
+
+.attention-teamlight:hover .attention-teamlight-info
+    visibility visible
+    opacity 1
+
+.attention-teamlight-info
+  display flex
+  visibility hidden
+  opacity 0
+  position absolute
+  left 30px
+  top -15px
+  padding 6px 10px
+  width 250px
+  background-color #E0F6F9
+  border-radius 2px
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+  color #0098AD
+  transition all linear .2s
+  z-index 2
+
+
+
+  &:before
+    content ''
+    position absolute
+    top: 17px;
+    left: -13.5px;
+    clip-path: polygon(100% 0, 45% 50%, 100% 100%);
+    size(14px)
+    background-color rgba(0, 178, 203, 0.1)
+
+.filter-show-all
+  display none
+  margin-bottom 14px
+
+.filter-show-more-block,.filter-show-more-block2
+  display none
+
+.filter-title-600
+  font-family "Montserrat 600", sans-serif
+
+
+.filter-pult-du
+  display flex
+  align-items center
+  width 34px
+  height 18px
+  background-color #D9D9D9
+  border-radius 40px
+  cursor pointer
+  position relative
+  will-change transform
+  transition all linear .2s
+
+  &:after
+    content ''
+    position absolute
+    background-color #fff
+    size(14px)
+    left 3px
+    border-radius 50%
+    transition all linear .2s
+
+.filter-pult-du.checked
+  background-color #00B2CB
+
+  &:after
+    left 17.5px
+
+.filter-pult-du-input
+  display none
+
+.filter-du-pult-wrap
+  width max-content
+
+  label
+    margin-bottom 0
+
+.filter-du--title
+  margin-right 22px
+
+
+.catalog-content-title
+  font-family "Montserrat 800", sans-serif
+  font-size 26px
+  margin-bottom 25px
+
+.catalog-content-tags
+  font-family: "Montserrat 500", sans-serif;
+  font-size: 11px;
+  color: #00b2cb;
+  border: 1px solid #00b2cb;
+  border-radius: 2px;
+  padding: 3px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all linear 0.2s;
+
+  &:hover
+    background: rgba(0, 178, 203, 0.09);
+    color #00b2cb;
+
+  &:active
+    background: #00b2cb
+    color #fff
+.catalog-cotent-filter-choise
+  margin-right 0
+  margin-left 0
+  margin-bottom 30px
+
+.catalog-content-sort
+  display flex
+  align-items center
+  margin-bottom 26px
+
+
+
+.selectCF
+  width 100%
+
+.onCF li ul
+  display block
+
+.select
+  width 100%
+  max-width 180px
+  position relative
+
+.select-input
+  position: relative;
+  background: transparent
+  border: 1px solid rgba(56, 56, 56, 0.4)
+  border-radius: 2px;
+  height: 28px;
+  width: 100%
+  max-width 180px
+  padding: 3px 12px
+  color: color383838
+  font-family "Montserrat 400", sans-serif
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor pointer
+  transition all linear .2s
+
+  &:hover
+    border: 1px solid color383838
+
+.partner-wrap-input .select-input
+  height: 47px;
+  font-size: 14px;
+
+.select-options
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 1px solid #686874;
+  z-index: 21;
+  display: none;
+  border-top: 0;
+
+.select-options li
+  padding: 8px 12px;
+  background-color: #fff;
+  font-family "Montserrat 400", sans-serif
+  font-size 14px
+  cursor: pointer;
+
+.append-icon .icon
+  position: absolute;
+  right: 14px;
+  width: 16px;
+  height: 9px;
+  fill: color383838;
+
+.append-icon
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0px;
+  z-index: 20;
+
+.arrow-rotate
+  transform: rotate(180deg);
+
+
+.catalog-content-sort-name
+  margin-right 12px
+  font-family "Montserrat 500", sans-serif
+  font-size 12px
+
+.catalog-content
+  padding-left 40px
+
+.catalog-product-item
+  background-color #fff
+  padding 20px
+  position relative
+
+
+
+
+.catalog-prodcut-procent
+  display block
+  position absolute
+  top: 30px;
+  left: 4px;
+  text-align center
+  line-height 0.8
+  background-color #C4F066
+  font-family "Montserrat 900", sans-serif
+  font-size 14px
+  padding 5px
+  padding-left 0
+  border-radius 2px
+  padding-bottom 9px
+  padding-top 0
+  width 60px
+  z-index 1
+
+  &:after
+    content ' '
+    position absolute
+    line-height 0.8
+    background-color #C4F066
+    padding 5px
+    border-radius 2px
+    padding-bottom 8px
+    padding-top 0
+    width 100%
+    left: -6px;
+    top: -9px;
+    z-index: -1;
+
+.catalog-product-country-and-count
+  display flex
+  align-items center
+  justify-content space-between
+
+.catalog-product-country
+  font-family "Montserrat 500", sans-serif
+  font-size 11px
+  color rgba(56, 56, 56, 0.81)
+
+.catalog-product-in-stock
+  font-family "Montserrat 500", sans-serif
+  font-size 11px
+  color #EE554B
+
+.catalog-product-country-and-count
+  margin-bottom 14px
+
+.catalog-prodcut-item-added-to-cart-text
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+
+.catalog-prodcut-item-added-to-cart
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative
+  bottom: 0;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: all linear 0.2s;
+
+  &:hover
+    border 1px solid color383838
+
+  .icon
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+    transition: all linear 0.2s;
+
+.catalog-content-prodcut-item
+  margin-bottom 30px
+
+.product-item-price-and-stock
+  margin-bottom 18px
+
+.catalog-prodcut-favourite
+  position absolute
+  display flex
+  right: 20px;
+  top: 25px;
+  cursor pointer
+  opacity 0
+  visibility hidden
+  transition all linear .2s
+
+  .icon
+    size(18px)
+    fill color383838
+
+.catalog-prodcut-present
+  position absolute
+  left 17px
+  top 60px
+  cursor pointer
+
+  .icon
+    size(25px)
+    fill #00B2CB
+.catalog-prodcut-present:hover .catalog-prodcut-present-text
+  visibility visible
+  opacity 1
+
+.catalog-prodcut-present-text
+  position absolute
+  left 36px
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  top: -4px;
+  padding: 5px 7px;
+  width: 170px;
+  background-color: #D8EDF0
+  border-radius: 2px;
+  font-family: "Montserrat 500", sans-serif;
+  font-size: 11px;
+  color: #0098ad;
+  transition: all linear 0.2s;
+
+  &:before
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -13.5px;
+    clip-path: polygon(100% 0, 45% 50%, 100% 100%);
+    width: 14px;
+    height: 14px;
+    background-color: #D8EDF0
+
+.catalog-product-item:hover
+  .catalog-prodcut-favourite,.catalog-product-preview
+    opacity 1
+    visibility visible
+
+
+.catalog-product-preview
+  background-color rgba(230, 230, 230, 0.71)
+  border-radius 50%
+  size(42px)
+  position absolute
+  top 175px
+  right 20px
+  display flex
+  align-items center
+  justify-content center
+  opacity 0
+  visibility hidden
+  transition  all linear .2s
+  cursor pointer
+
+  &:hover
+    background-color: rgba(0,178,203,0.1)
+
+    .icon
+      fill #0098ad;
+    .catalog-product-preview-text
+      opacity 1
+      visibility visible
+
+
+  .icon
+    size(17px)
+    transition all linear .2s
+
+
+.catalog-product-preview-text
+  position absolute
+  right 55px
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  top: 10px;
+  padding: 5px 7px;
+  width: max-content
+  background-color: #D8EDF0
+  border-radius: 2px;
+  font-family: "Montserrat 500", sans-serif;
+  font-size: 11px;
+  color: #0098ad;
+  transition: all linear 0.2s;
+
+  &:before
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -14px;
+    clip-path: polygon(100% 0, 45% 50%, 100% 100%);
+    width: 14px;
+    height: 14px;
+    background-color: #D8EDF0
+    transform rotate(180deg)
+
+
+.catalog-count-pagination
+  display flex
+  justify-content center
+  align-items center
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+  margin-bottom 35px
+.catalog-product-item__img
+  height 100%
+  max-height 224px
+  min-height 224px
+
+.catalog-product-pagi-text
+  font-family "Montserrat 400", sans-serif
+  font-size 12px
+  line-height 2
+
+

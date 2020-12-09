@@ -1,0 +1,11 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'Новость'
+    - var pageClass = 'index-page'
+
+block content
+    include news-page/breadcrumbs
+    include ../modules/go-back-mobile
+    include news-page/section-1
+    include news-page/section-2

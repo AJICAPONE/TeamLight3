@@ -1,0 +1,10 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'Корзина'
+    - var pageClass = 'basket-page'
+
+block content
+    include basket/breadcrumbs
+    include ../modules/go-back-mobile
+    include basket/section-1

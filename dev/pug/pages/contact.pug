@@ -1,0 +1,10 @@
+extends ../layout/basket
+
+block variables
+    - var title = 'Контакты'
+    - var pageClass = 'index-page'
+
+block content
+    include contacts/breadcrumbs
+    include ../modules/go-back-mobile
+    include contacts/section-1

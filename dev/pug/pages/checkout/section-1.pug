@@ -1,0 +1,64 @@
+section.basket-product
+    .container
+        .basket-product-wrap
+            h3.section-title Оформление заказа
+            form#checkout-form.basket-products-wrapper
+                .basket-products.col-xl-8.col-lg-12
+                    .checkout-title-wrap
+                        .checkout-number-title 1
+                        .tab-title Ваши данные
+                    .basket-checkout-form
+                        .basket-checkout-row.row
+                           .basket-checkout-input-wrap.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required(type="text" placeholder="Ваше имя" name="name")
+                           .basket-checkout-input-wrap.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required.phone-mask(type="phone" placeholder="Номер телефона" name="tel")
+                           .basket-checkout-input-wrap.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required.error-email-input(type="email" placeholder="E-mail" name="email")
+                           .basket-checkout-input-wrap.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required(type="text" placeholder="Населенный пункт" name="punkt")
+                           .basket-checkout-input-wrap.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required(type="text" placeholder="Улица и дом" name="address")
+                           .basket-checkout-input-wrap.label-off.col-lg-4
+                               .basket-input
+                                   input.teamlight-inputs.input-required(type="text" placeholder="Квартира или офис")
+                           .basket-checkout-input-wrap.col-lg-12
+                               textarea.teamlight-textarea(placeholder="Комментарий к заказу" cols="7")
+                    .checkout-info-delivery
+                        .checkout-title-wrap
+                            .checkout-number-title 2
+                            .tab-title Информация о доставке
+                        .checkout-info-deli
+                            p Осуществляется в течение 2-х дней после поступления заявки.
+                            p Минимальная сумма заказа – 1 500 ₽. Оплачивается дополнительно 25 ₽ за километр пути, начиная с 6-ого, от МКАД.
+                            span.annotation После оформления заказа с вами свяжется наш менеджер для подтверждения.
+
+                .basket-products-info.col-xl-4.col-lg-6
+                    .your-basket
+                        .tab-title Ваша корзина
+                        .you-basket-summ-and-stock
+                            .your-product-summ
+                                span 4 товара на сумму
+                                span 143 500 ₽
+                            .your-product-summ
+                                span Общая скидка
+                                span.you-basket-stock -8 145 ₽
+                        .you-basket-summ-over
+                            span Итоговая стоимость
+                            span 138 355 ₽
+                        button#submit-checkout.you-basket-over-buy.teamlight-buttons-buy.checkout-order(type="submit" disabled="disabled") Оформить заказ
+                        .checked-checkout-order
+                            input#checked-checkout.checkout-checkbox(type="checkbox" onchange="document.getElementById('submit-checkout').disabled = !this.checked;")
+                            label(for="checked-checkout")
+                            span Я согласен с условиями #[a.teamlight-link(href="/") пользовательского соглашения]
+                    .your-basket-call
+                        .tab-title Не хотите ничего заполнять?
+                        p Тогда позвоните нам по номеру и менеджер примет заказ по телефону
+                        .you-call-me
+                            +icon('call-me')
+                            a.teamlight-link(href="tel:+74957616160") +7 (495) 761-61-60

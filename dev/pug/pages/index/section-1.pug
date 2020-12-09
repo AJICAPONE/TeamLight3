@@ -1,0 +1,58 @@
+section.main-slider
+    .container
+        .slider-and-baners
+            .pr-0.col-lg-8
+                .js-main-slider.swiper-container
+                    .swiper-wrapper
+                        .main-swiper-slide.swiper-slide
+                            img.main-swiper-slide__img(src="static/img/general/mainSlider/slide1.png" alt="Название")
+                            .main-swiper-slide-content
+                                .my-swiper-content-category Светильники
+                                h3.my-swiper-content-title Кухня в новом свете
+                                .my-swiper-content-price от 17 990 ₽
+                                a.my-swiper-content-link(href="/")
+                                    span Узнать больше
+                                    .my-swiper-content-link--icon
+                                        +icon('arrow-city')
+                        .main-swiper-slide.swiper-slide
+                            img.main-swiper-slide__img(src="static/img/general/mainSlider/slide1.png" alt="Название")
+
+                        .main-swiper-slide.swiper-slide
+                            img.main-swiper-slide__img(src="static/img/general/mainSlider/slide1.png" alt="Название")
+
+                    .my-swiper-pagination.swiper-pagination
+                    .my-arrows-wrap
+                        .my-swiper-button-prev.my-button-arrows
+                            +icon('arrow-prev')
+                        .my-swiper-button-next.my-button-arrows
+                            +icon('arrow-next')
+            .col-lg-4
+                .baners-ride-slider
+                    .baner-slider-first
+                        img.baners-img.img-width-100(src="static/img/general/mainSlider/sliderban/img1.png" alt="Название")
+                        .baner-slider-content
+                            .baner-stock-procent
+                                .baner-stock-procent-wrap
+                                    .baner-stock-procent-number — 20%
+                            .baner-stock-content
+                                .baner-stock-stock Распродажа
+                                h3.baner-stock-title Торшеры
+                                a.my-swiper-content-link(href="/")
+                                    span Узнать больше
+                                    .my-swiper-content-link--icon
+                                        +icon('arrow-right')
+
+
+                    .baner-slider-second
+                        img.baners-img.img-width-100(src="static/img/general/mainSlider/sliderban/img2.png" alt="Название")
+                        .baner-slider-content
+                            .baner-stock-procent
+                                .baner-stock-procent-wrap
+                                    .baner-stock-procent-number.red-baner — 70%
+                            .baner-stock-content
+                                .baner-stock-stock.color383838 Предложение ограничено
+                                h3.baner-stock-title.color383838 Настольные лампы
+                                a.my-swiper-content-link(href="/")
+                                    span.color383838 Узнать больше
+                                    .my-swiper-content-link--icon.color383838.bc-383838
+                                        +icon('arrow-right')

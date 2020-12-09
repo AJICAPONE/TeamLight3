@@ -1,0 +1,752 @@
+section.catalog
+    .container
+        .catalog-wrapper
+            .filter-catalog.col-xl-3.col-lg-4.col-md-1
+                form.filter-catalog-form#reset-filter-form
+                    .filter-block.filter-category
+                        h3.filter-title Категории
+                        ul.filter-category-list
+                            li.filter-category-item
+                                .filter-category-list-name Люстры
+                                ul.filter-category-list-lvl2
+                                    li.filter-category-item-lvl2.active
+                                        a.filter-category-list-name-lvl2 Подвесные
+                                        .filter-category-remove
+                                            +icon('close')
+                                    li.filter-category-item-lvl2
+                                        a.filter-category-list-name-lvl2 Потолочные
+                                        .filter-category-remove
+                                            +icon('close')
+                                    li.filter-category-item-lvl2
+                                        a.filter-category-list-name-lvl2 Хрустальные
+                                        .filter-category-remove
+                                            +icon('close')
+                                    li.filter-category-item-lvl2
+                                        a.filter-category-list-name-lvl2 Дизайнерские
+                                        .filter-category-remove
+                                            +icon('close')
+                                    li.filter-category-item-lvl2
+                                        a.filter-category-list-name-lvl2 Большие
+                                        .filter-category-remove
+                                            +icon('close')
+                            li.filter-category-item
+                                .filter-category-list-name Торшеры
+                            li.filter-category-item
+                                .filter-category-list-name Бра
+                            li.filter-category-item
+                                .filter-category-list-name Настенно-потолочные светильники
+                            li.filter-category-item
+                                .filter-category-list-name Настольные лампы
+                            .filter-show-all
+                                li.filter-category-item
+                                    .filter-category-list-name Торшеры
+                                    ul.filter-category-list-lvl2
+                                        li.filter-category-item-lvl2.active
+                                            a.filter-category-list-name-lvl2 Подвесные
+                                            .filter-category-remove
+                                                +icon('close')
+                                        li.filter-category-item-lvl2
+                                            a.filter-category-list-name-lvl2 Потолочные
+                                            .filter-category-remove
+                                                +icon('close')
+                                        li.filter-category-item-lvl2
+                                            a.filter-category-list-name-lvl2 Хрустальные
+                                            .filter-category-remove
+                                                +icon('close')
+                                        li.filter-category-item-lvl2
+                                            a.filter-category-list-name-lvl2 Дизайнерские
+                                            .filter-category-remove
+                                                +icon('close')
+                                        li.filter-category-item-lvl2
+                                            a.filter-category-list-name-lvl2 Большие
+                                            .filter-category-remove
+                                                +icon('close')
+                                li.filter-category-item
+                                    .filter-category-list-name Бра
+                                li.filter-category-item
+                                    .filter-category-list-name Настенно-потолочные светильники
+                                li.filter-category-item
+                                    .filter-category-list-name Настольные лампы
+                            .filter-category-watch-all Смотреть все
+                    .filter-block.filter-price
+                        .filter-price-title-clear-count#price-reset
+                            h3.filter-title Цена
+                            span.filter-price-clear-count Очистить
+                        .filter-price--wrap
+                            .filter--price-js#filter-slider
+                            .filter--price--inputs
+                                .filter--price--from.filter--label-input
+                                    label от
+                                    input#hidden1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='300')
+                                .filter--price--to.filter--label-input
+                                    label до
+                                    input#hidden2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='1000000')
+                        .filter-price-checkbox-list
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="price_best")
+                                    .filter-price-checkbox-item__name Бестселлеры
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="price_new")
+                                    .filter-price-checkbox-item__name Новинки
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="price_stock")
+                                    .filter-price-checkbox-item__name Со скидкой
+                    .filter-block.filter-area
+                        .filter-price-title-clear-count#light-reset
+                            h3.filter-title Площадь освещения
+                            span.filter-price-clear-count Очистить
+                        .filter-price--wrap
+                            .filter--price-js#filter-slider2
+                            .filter--price--inputs
+                                .filter--price--from.filter--label-input
+                                    label от
+                                    input#light1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='4 м²')
+                                .filter--price--to.filter--label-input
+                                    label до
+                                    input#light2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='200 м²')
+                    .filter-block.filter-color
+                        h3.filter-title Цвет
+                        .filter-price-checkbox-list
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="white_color")
+                                    .filter-price-checkbox-item__name Белый
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="light_color")
+                                    .filter-price-checkbox-item__name Светлый
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="dark_color")
+                                    .filter-price-checkbox-item__name Темный
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="black_color")
+                                    .filter-price-checkbox-item__name Черный
+                    .filter-block.filter-size
+                        h3.filter-title Размер
+                        .filter-price-checkbox-list
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="big_size")
+                                    .filter-price-checkbox-item__name Большие
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="medium_size")
+                                    .filter-price-checkbox-item__name Средние
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="small_size")
+                                    .filter-price-checkbox-item__name Маленькие
+                    .filter-block.filter-place
+                        h3.filter-title Место применения
+                        .filter-price-checkbox-list
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="sleep_room")
+                                    .filter-price-checkbox-item__name Спальня
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="kid_room")
+                                    .filter-price-checkbox-item__name Детская
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="living_room")
+                                    .filter-price-checkbox-item__name Гостиная
+                            .filter-show-all
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="bath_room")
+                                        .filter-price-checkbox-item__name Ванная
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="hall_room")
+                                        .filter-price-checkbox-item__name Зал
+                            .filter-category-watch-all Смотреть все
+                    .filter-block.filter-country
+                        h3.filter-title.filter-title-600 Страна
+                        .filter-price-checkbox-list
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="no_china")
+                                    .filter-attention
+                                        .filter-price-checkbox-item__name Не Китай
+                                        .attention-teamlight
+                                            +icon('attention')
+                                            p.attention-teamlight-info Вы уверены? Современный Китай производит качественные и технологичные товары.
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="germany_country")
+                                    .filter-price-checkbox-item__name Германия
+                            .filter-price-checkbox-wrap
+                                label
+                                    .filter-price-checkbox-item.input-teamlight
+                                    input.filter-price-checkbox-item--input(type="checkbox" name="korea_country")
+                                    .filter-price-checkbox-item__name Корея
+                            .filter-show-all
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="italy_country")
+                                        .filter-price-checkbox-item__name Италия
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="france_country")
+                                        .filter-price-checkbox-item__name Франция
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="spain_country")
+                                        .filter-price-checkbox-item__name Испания
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="russia_country")
+                                        .filter-price-checkbox-item__name Россия
+                            .filter-category-watch-all Смотреть все
+                    .filter-show-more-block
+                        .filter-block.filter-brand
+                            h3.filter-title.filter-title-600 Бренд
+                            .filter-price-checkbox-list
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="alfa_brand")
+                                        .filter-price-checkbox-item__name Alfa
+                                .filter-price-checkbox-wrap
+                                    label
+                                        .filter-price-checkbox-item.input-teamlight
+                                        input.filter-price-checkbox-item--input(type="checkbox" name="artelamp_brand")
+                                        .filter-price-checkbox-item__name ArteLamp
+                                .filter-show-all
+                                    .filter-price-checkbox-wrap
+                                        label
+                                            .filter-price-checkbox-item.input-teamlight
+                                            input.filter-price-checkbox-item--input(type="checkbox" name="bogate_brand")
+                                            .filter-price-checkbox-item__name Bogate’s
+                                    .filter-price-checkbox-wrap
+                                        label
+                                            .filter-price-checkbox-item.input-teamlight
+                                            input.filter-price-checkbox-item--input(type="checkbox" name="bogate_brand")
+                                            .filter-price-checkbox-item__name Bogate’s
+                                    .filter-price-checkbox-wrap
+                                        label
+                                            .filter-price-checkbox-item.input-teamlight
+                                            input.filter-price-checkbox-item--input(type="checkbox" name="bogate_brand")
+                                            .filter-price-checkbox-item__name Bogate’s
+                                .filter-category-watch-all Смотреть все
+                        .filter-more-param-and-block-wrap
+                            .filter-more-parameters2
+                                span.filter-more-parameters-text2.filter-material-and-color-text Материал и цвет основания
+                                +icon('arrow-down')
+                            .filter-show-more-block2
+                                .filter-block.filter-material
+                                    h3.filter-title.filter-title-600 Материал
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="akril_material")
+                                                .filter-price-checkbox-item__name Акрил
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="alluminium_material")
+                                                .filter-price-checkbox-item__name Алюминий
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                .filter-price-checkbox-item__name Дерево
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-color
+                                    h3.filter-title.filter-title-600 Цвет
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                .filter-price-checkbox-item__name Бежевый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                .filter-price-checkbox-item__name Белый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                .filter-price-checkbox-item__name Бронза
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                    .filter-price-checkbox-item__name Бежевый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                    .filter-price-checkbox-item__name Белый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                    .filter-price-checkbox-item__name Бронза
+                                        .filter-category-watch-all Смотреть все
+                        .filter-more-param-and-block-wrap
+                            .filter-more-parameters3
+                                span.filter-more-parameters-text2.filter-material-and-color-text Материал и цвет плафонов
+                                +icon('arrow-down')
+                            .filter-show-more-block2
+                                .filter-block.filter-material
+                                    h3.filter-title.filter-title-600 Материал
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="akril_material")
+                                                .filter-price-checkbox-item__name Акрил
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="alluminium_material")
+                                                .filter-price-checkbox-item__name Алюминий
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                .filter-price-checkbox-item__name Дерево
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="tree_material")
+                                                    .filter-price-checkbox-item__name Дерево
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-color
+                                    h3.filter-title.filter-title-600 Цвет
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                .filter-price-checkbox-item__name Бежевый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                .filter-price-checkbox-item__name Белый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                .filter-price-checkbox-item__name Бронза
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                    .filter-price-checkbox-item__name Бежевый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                    .filter-price-checkbox-item__name Белый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                    .filter-price-checkbox-item__name Бронза
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-color
+                                    h3.filter-title.filter-title-600 Цвет подвесок
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                .filter-price-checkbox-item__name Бежевый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                .filter-price-checkbox-item__name Белый
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                .filter-price-checkbox-item__name Бронза
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="bi_color")
+                                                    .filter-price-checkbox-item__name Бежевый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="wt_color")
+                                                    .filter-price-checkbox-item__name Белый
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="br_color")
+                                                    .filter-price-checkbox-item__name Бронза
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-style
+                                    h3.filter-title.filter-title-600 Стиль
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="artdeco_style")
+                                                .filter-price-checkbox-item__name Арт-деко
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="vostok_style")
+                                                .filter-price-checkbox-item__name Восточный
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="kantri_style")
+                                                .filter-price-checkbox-item__name Кантри
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="artdeco_style")
+                                                    .filter-price-checkbox-item__name Арт-деко
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="vostok_style")
+                                                    .filter-price-checkbox-item__name Восточный
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="kantri_style")
+                                                    .filter-price-checkbox-item__name Кантри
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-type
+                                    h3.filter-title.filter-title-600 Тип светильника
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="abajuri_type")
+                                                .filter-price-checkbox-item__name Абажуры
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="wtanga_type")
+                                                .filter-price-checkbox-item__name На штанге
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="podves_type")
+                                                .filter-price-checkbox-item__name Подвесной
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="abajuri_type")
+                                                    .filter-price-checkbox-item__name Абажуры
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="wtanga_type")
+                                                    .filter-price-checkbox-item__name На штанге
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="podves_type")
+                                                    .filter-price-checkbox-item__name Подвесной
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-type
+                                    h3.filter-title.filter-title-600 Тип патрона
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="Е14_type")
+                                                .filter-price-checkbox-item__name Е14
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="Е27_type")
+                                                .filter-price-checkbox-item__name Е27
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="G4_type")
+                                                .filter-price-checkbox-item__name G4
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="Е14_type")
+                                                    .filter-price-checkbox-item__name Е14
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="Е27_type")
+                                                    .filter-price-checkbox-item__name Е27
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="G4_type")
+                                                    .filter-price-checkbox-item__name G4
+                                        .filter-category-watch-all Смотреть все
+
+
+                                .filter-block.filter-count-lights
+                                    .filter-price-title-clear-count#count-reset
+                                        h3.filter-title Количество ламп
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider3
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-light1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='0 Шт')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-light2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='550 Шт')
+                                .filter-block.filter-count-plafon
+                                    .filter-price-title-clear-count#count-reset2
+                                        h3.filter-title Количество плафонов
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider4
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-plafon1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='0 Шт')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-plafon2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='84 Шт')
+                                .filter-block.filter-count-power
+                                    .filter-price-title-clear-count#count-reset3
+                                        h3.filter-title Мощность
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider5
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-power1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='0 Вт')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-power2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='550 Вт')
+                                .filter-block.filter-type
+                                    h3.filter-title.filter-title-600 Тип крепления
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="cruk")
+                                                .filter-price-checkbox-item__name Крюк
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="planka")
+                                                .filter-price-checkbox-item__name Планка
+                                .filter-block.filter-stepen
+                                    h3.filter-title.filter-title-600 Степень защиты IP
+                                    .filter-price-checkbox-list
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="20_stepen")
+                                                .filter-price-checkbox-item__name 20
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="40_stepen")
+                                                .filter-price-checkbox-item__name 40
+                                        .filter-price-checkbox-wrap
+                                            label
+                                                .filter-price-checkbox-item.input-teamlight
+                                                input.filter-price-checkbox-item--input(type="checkbox" name="43_stepen")
+                                                .filter-price-checkbox-item__name 43
+                                        .filter-show-all
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="20_stepen")
+                                                    .filter-price-checkbox-item__name 20
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="40_stepen")
+                                                    .filter-price-checkbox-item__name 40
+                                            .filter-price-checkbox-wrap
+                                                label
+                                                    .filter-price-checkbox-item.input-teamlight
+                                                    input.filter-price-checkbox-item--input(type="checkbox" name="43_stepen")
+                                                    .filter-price-checkbox-item__name 43
+                                        .filter-category-watch-all Смотреть все
+                                .filter-block.filter-du
+                                    .filter-price-title-clear-count.filter-du-pult-wrap
+                                        h3.filter-title.filter-du--title Пульт ДУ
+                                        label
+                                            .filter-pult-du
+                                            input.filter-pult-du-input(type="checkbox" name="pult_du")
+
+
+                        .filter-more-param-and-block-wrap
+                            .filter-more-parameters4
+                                span.filter-more-parameters-text2.filter-material-and-color-text Разверы
+                                +icon('arrow-down')
+                            .filter-show-more-block2
+                                .filter-block.filter-count-power
+                                    .filter-price-title-clear-count#count-reset4
+                                        h3.filter-title Высота
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider6
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-height1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='40 см')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-height2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='1880 см')
+                                .filter-block.filter-count-power
+                                    .filter-price-title-clear-count#count-reset5
+                                        h3.filter-title Длина
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider7
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-longer1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='0 см')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-longer2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='1200 см')
+                                .filter-block.filter-count-power
+                                    .filter-price-title-clear-count#count-reset6
+                                        h3.filter-title Ширина
+                                        span.filter-price-clear-count Очистить
+                                    .filter-price--wrap
+                                        .filter--price-js#filter-slider8
+                                        .filter--price--inputs
+                                            .filter--price--from.filter--label-input
+                                                label от
+                                                input#count-width1.sliders-filters.input-teamlight(name='1', type='text', data-index="0" value='0 см')
+                                            .filter--price--to.filter--label-input
+                                                label до
+                                                input#count-width2.sliders-filters.input-teamlight(name='2', type='text', data-index="1" value='1200 см')
+
+
+                    button.teamlight-button-filter.filter-submit(type="submit")
+                        .filter-submit-text Показать #[span 465] товаров
+                    .filter-reset
+                        +icon('trash')
+                        span.filter-reset-text Очистить фильтр
+                    .filter-more-parameters
+                        span.filter-more-parameters-text Дополнительные параметры
+                        +icon('arrow-down')
+
+            .catalog-content.col-xl-9.col-lg-8.col-md-12
+                h3.catalog-content-title Люстры
+                .catalog-cotent-filter-choise.row
+                    a.catalog-content-tags(href="/") Для кухни
+                    a.catalog-content-tags(href="/") Светодиодные
+                    a.catalog-content-tags(href="/") Люстра в спальню
+                    a.catalog-content-tags(href="/") Плафон для люстры
+                    a.catalog-content-tags(href="/") Арт-деко
+                    a.catalog-content-tags(href="/") Люстра потолочная
+                .catalog-content-sort
+                    span.catalog-content-sort-name Сортировать
+                    select.test
+                        option(value="По-популярности") По популярности
+                        option(value="По-цене") По цене
+                    .filter-mobile-button
+                        +icon('settings')
+                        span Фильтр
+                .catalog-content-product
+                    .catalog-content-container.row
+                        include catalog-items/catalog-item
+                        include catalog-items/catalog-item2
+                        include catalog-items/catalog-item3
+                        include catalog-items/catalog-item4
+                        include catalog-items/catalog-item5
+                        include catalog-items/catalog-item6
+                        include catalog-items/catalog-item
+                        include catalog-items/catalog-item2
+                        include catalog-items/catalog-item3
+                        include catalog-items/catalog-item4
+                        include catalog-items/catalog-item5
+                        include catalog-items/catalog-item6
+                        include catalog-items/catalog-item
+                        include catalog-items/catalog-item2
+                        include catalog-items/catalog-item3
+                        include catalog-items/catalog-item4
+                        include catalog-items/catalog-item5
+                        include catalog-items/catalog-item6
+                        include catalog-items/catalog-item
+                        include catalog-items/catalog-item2
+                        include catalog-items/catalog-item3
+                        include catalog-items/catalog-item4
+                        include catalog-items/catalog-item5
+                        include catalog-items/catalog-item6
+                .catalog-pagination
+                .catalog-count-pagination
+                    .catalog-count-pagination-now #[span.catalog-pag-show-items 0] #[span.catalog-count-product-pag товаров] #[span.catalog-count-pagination-all 576]
+                p.catalog-product-pagi-text Потолочные люстры – светотехника, пользующаяся наибольшим спросом и популярностью, даже во времена активного использования точечного, контурного и декоративного освещения. Благодаря универсальной конструкции и широкому выбору форм и дизайнерских решений использовать потолочную люстру можно в любом помещении дома или квартиры независимо от стиля и интерьера помещений. Купить потолочную люстру можно в нашем интернет-магазине. Оцените каталог представленных моделей и сделайте свой выбор.!
+                p.catalog-product-pagi-text.catalog-product-pagi-more-text Потолочные люстры – светотехника, пользующаяся наибольшим спросом и популярностью, даже во времена активного использования точечного, контурного и декоративного освещения. Благодаря универсальной конструкции и широкому выбору форм и дизайнерских решений использовать потолочную люстру можно в любом помещении дома или квартиры независимо от стиля и интерьера помещений. Купить потолочную люстру можно в нашем интернет-магазине. Оцените каталог представленных моделей и сделайте свой выбор.!
+                .catalog-product-pagi-link.catalog-product-pagi-toggle.teamlight-link Читать полностью
+
+    include ../../modules/mobile-filter
+

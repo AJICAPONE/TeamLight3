@@ -1,0 +1,24 @@
+#popop-1-click.modal.fade.popup-bg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-dialog(role='document')
+        .modal-content.popup1-content
+            .popup-1-click-wrap
+                .popup-1-left(style="background-image:url('static/img/general/img1.png')")
+
+                .popup-1-right
+                    button.close.popup-close(type='button' data-dismiss='modal' aria-label='Close')
+                        +icon('close')
+                    .popup-1-right-content
+                        h3.popup-title.text-center.fs-22 Люстра ArteLamp A5518LM-3SS FISHERMAN
+                        form
+                            input.teamlight-inputs(type="text" placeholder="Ваше имя")
+                            input.teamlight-inputs.phone-mask(type="phone" placeholder="Номер телефона")
+                            input.teamlight-inputs(type="email" placeholder="E-mail")
+                            input.teamlight-inputs(type="text" placeholder="Комментарий")
+                            button#submit-checkout.teamlight-buttons-buy.popup-buy.border-0.mb-3.checkout-order(type="submit" disabled="disabled") Купить в 1 клик
+                            .checked-checkout-order
+                                input#checked-checkout.checkout-checkbox(type="checkbox" onchange="document.getElementById('submit-checkout').disabled = !this.checked;")
+                                label(for="checked-checkout")
+                                span Я согласен с условиями #[a.teamlight-link(href="/") пользовательского соглашения]
+
+
+
